@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: lennudDB
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: lennudDB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: fmgd5hnCff
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
