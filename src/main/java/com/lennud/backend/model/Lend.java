@@ -3,6 +3,7 @@ package com.lennud.backend.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -25,6 +26,7 @@ public class Lend {
 
     @Column(nullable = false)
     private String lennuk;
+
 
 
 }

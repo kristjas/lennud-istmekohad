@@ -22,8 +22,8 @@ public class dbSeeder {
                 System.out.println("lisame lennud");
 
                 Lend lend1 = new Lend(null, "Tallinn", LocalDate.of(2025, 3, 26), LocalTime.of(8, 0), LocalTime.of(10, 30), 150.00, "Boeing");
-                Lend lend2 = new Lend(null, "London", LocalDate.of(2025, 3, 27), LocalTime.of(12, 15), LocalTime.of(14, 45), 200.00, "Boeing");
-                Lend lend3 = new Lend(null, "Berliin", LocalDate.of(2025, 3, 29), LocalTime.of(18, 0), LocalTime.of(20, 30), 180.00, "Boeing");
+                Lend lend2 = new Lend(null, "London", LocalDate.of(2025, 3, 27), LocalTime.of(12, 15), LocalTime.of(13, 15), 200.00, "Boeing");
+                Lend lend3 = new Lend(null, "Berliin", LocalDate.of(2025, 3, 29), LocalTime.of(18, 15), LocalTime.of(23, 0), 180.00, "Boeing");
 
                 lendRepository.saveAll(List.of(lend1, lend2, lend3));
                 System.out.println("lennud lisatud");

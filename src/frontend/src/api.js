@@ -10,4 +10,11 @@ export const getFlights = async () => {
     console.error("Error fetching flights:", error);
     return [];
   }
+
+
+};
+export const getSeatsByLennuk = async (lennuk) => {
+  const response = await fetch(`/api/istmed/byLennuk/${lennuk}`);
+  const data = await response.json();
+  return data;
 };
