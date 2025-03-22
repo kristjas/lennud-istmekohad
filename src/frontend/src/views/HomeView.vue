@@ -13,7 +13,7 @@
       <label for="date">Vali kuupäev:</label>
       <input id="date" v-model="filtrid.kuupäev" type="date" />
 
-      <label for="kestvus" class="slider">Lennu pikkus (kuni 5 tundi):</label>
+      <label for="kestvus" class="slider">Lennu pikkus:</label>
       <input
           id="kestvus"
           v-model.number="filtrid.kestvus"
@@ -24,6 +24,18 @@
           class="slider2"
       />
       <span class="duration-text">{{ filtrid.kestvus }} tundi</span>
+
+      <label for="price" class="slider">Hind:</label>
+      <input
+          id="price"
+          v-model.number="filtrid.hind"
+          type="range"
+          min="1"
+          max="500"
+          step="1"
+          class="slider2"
+      />
+      <span class="duration-text">{{ filtrid.hind }} €</span>
     </div>
 
 
@@ -116,6 +128,7 @@ const filtrid = ref({
   sihtkoht: '',
   kuupäev: '',
   kestvus: 5,
+  hind: 500,
 });
 
 
@@ -151,7 +164,8 @@ const filtreeritudLennud = computed(() => {
     return (
         (!filtrid.value.sihtkoht || lend.sihtkoht === filtrid.value.sihtkoht) &&
         (!filtrid.value.kuupäev || lend.kuupäev === filtrid.value.kuupäev) &&
-        (!filtrid.value.kestvus || lennuKestvus <= filtrid.value.kestvus)
+        (!filtrid.value.kestvus || lennuKestvus <= filtrid.value.kestvus) &&
+        (!filtrid.value.hind || lend.hind <= filtrid.value.hind)
     );
   });
 });
@@ -305,7 +319,7 @@ const kasOnSoovitatud = (iste) => {
 
 .slider {
   width: 100%;
-  max-width: 300px;
+  max-width: 80px;
 }
 .slider2 {
   accent-color: #333333;
@@ -313,7 +327,7 @@ const kasOnSoovitatud = (iste) => {
 
 .duration-text {
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 5px;
   color: rgb(88, 93, 96);
 }
 
