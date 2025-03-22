@@ -1,5 +1,5 @@
 import axios from "axios";
-
+//siin fetchime info backendist
 const API_URL = "http://localhost:3000/api/flights"; 
 
 export const getFlights = async () => {

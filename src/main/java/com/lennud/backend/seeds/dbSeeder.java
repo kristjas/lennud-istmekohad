@@ -17,6 +17,7 @@ public class dbSeeder {
 
     @Bean
     public CommandLineRunner seedDatabase(LendRepository lendRepository, IstmedRepository istmedRepository) {
+        //Täidame andmebaasi
         return args -> {
             if (lendRepository.count() == 0) {
                 System.out.println("lisame lennud");

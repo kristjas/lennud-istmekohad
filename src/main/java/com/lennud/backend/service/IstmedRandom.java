@@ -9,6 +9,7 @@ import java.util.Random;
 
 @Service
 public class IstmedRandom {
+    //paneme kinni suvalised istmed
     private final IstmedRepository istmedRepository;
     private final Random random = new Random();
 

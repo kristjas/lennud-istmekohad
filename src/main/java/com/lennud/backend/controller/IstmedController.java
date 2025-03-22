@@ -10,6 +10,7 @@ import java.util.List;
 @RequestMapping("/api/istmed")
 @CrossOrigin(origins = "*")
 public class IstmedController {
+    //siit saame istmed
     private final IstmedRandom istmedRandom;
 
     public IstmedController(IstmedRandom istmedRandom) {

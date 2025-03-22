@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("/api/flights")
 @CrossOrigin(origins = "http://localhost:5173")
 public class LendController {
-
+//siit saame lennud
     private final LendRepository lendRepository;
 
     public LendController(LendRepository lendRepository) {
