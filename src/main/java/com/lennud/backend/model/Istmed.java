@@ -16,6 +16,7 @@ public class Istmed {
     private boolean jalaruum;
     private boolean aken;
     private boolean exit;
+    private boolean voetud;
 
     @Column(nullable = false)
     private String lennuk;

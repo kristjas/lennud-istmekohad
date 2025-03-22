@@ -33,22 +33,26 @@ public class dbSeeder {
 
 
                     List<Istmed> seats = List.of(
-                            new Istmed(null, 1, true, true, false, "Boeing"),
-                            new Istmed(null, 2, true, false, false, "Boeing"),
-                            new Istmed(null, 3, true, false, false, "Boeing"),
-                            new Istmed(null, 4, true, true, false, "Boeing"),
-                            new Istmed(null, 5, false, true, false, "Boeing"),
-                            new Istmed(null, 6, false, false, false, "Boeing"),
-                            new Istmed(null, 7, false, false, false, "Boeing"),
-                            new Istmed(null, 8, false, true, false, "Boeing"),
-                            new Istmed(null, 9, false, true, false, "Boeing"),
-                            new Istmed(null, 10, false, false, false, "Boeing"),
-                            new Istmed(null, 11, false, false, false, "Boeing"),
-                            new Istmed(null, 12, false, true, false, "Boeing"),
-                            new Istmed(null, 13, false, true, false, "Boeing"),
-                            new Istmed(null, 14, false, false, false, "Boeing"),
-                            new Istmed(null, 15, false, false, true, "Boeing"),
-                            new Istmed(null, 16, false, true, true, "Boeing")
+                            new Istmed(null, 1, true, true, false, false, "Boeing"),
+                            new Istmed(null, 2, true, false, false, false, "Boeing"),
+                            new Istmed(null, 3, true, false, false, false, "Boeing"),
+                            new Istmed(null, 4, true, true, false, false, "Boeing"),
+                            new Istmed(null, 5, false, true, false, false, "Boeing"),
+                            new Istmed(null, 6, false, false, false, false, "Boeing"),
+                            new Istmed(null, 7, false, false, false, false, "Boeing"),
+                            new Istmed(null, 8, false, true, false, false, "Boeing"),
+                            new Istmed(null, 9, false, true, false, false, "Boeing"),
+                            new Istmed(null, 10, false, false, false, false, "Boeing"),
+                            new Istmed(null, 11, false, false, false, false, "Boeing"),
+                            new Istmed(null, 12, false, true, false, false, "Boeing"),
+                            new Istmed(null, 13, false, true, false, false, "Boeing"),
+                            new Istmed(null, 14, false, false, false, false, "Boeing"),
+                            new Istmed(null, 15, false, false, false, false, "Boeing"),
+                            new Istmed(null, 16, false, true, false, false, "Boeing"),
+                            new Istmed(null, 17, false, true, false, false, "Boeing"),
+                            new Istmed(null, 18, false, false, false, false, "Boeing"),
+                            new Istmed(null, 19, false, false, true, false, "Boeing"),
+                            new Istmed(null, 20, false, true, true, false, "Boeing")
                     );
 
                     istmedRepository.saveAll(seats);

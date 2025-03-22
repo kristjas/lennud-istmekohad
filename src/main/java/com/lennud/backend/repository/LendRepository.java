@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface LendRepository extends JpaRepository<Lend, Long> {
-    List<Lend> findBySihtkoht(String sihtkoht);
+
 }

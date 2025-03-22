@@ -14,7 +14,7 @@ export const getFlights = async () => {
 
 };
 export const getSeatsByLennuk = async (lennuk) => {
-  const response = await fetch(`/api/istmed/byLennuk/${lennuk}`);
+  const response = await fetch(`/api/istmed/${lennuk}`);
   const data = await response.json();
   return data;
 };
